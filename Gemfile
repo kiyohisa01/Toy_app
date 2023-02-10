@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem "rails",           "7.0.4"
 gem "sprockets-rails", "3.4.2"
+gem "sqlite3",         "~> 1.3"
 gem "puma",            "5.6.4"
 gem "importmap-rails", "1.1.0"
 gem "turbo-rails",     "1.1.1"
@@ -12,7 +13,6 @@ gem "tzinfo-data"
 gem "bootsnap",        "1.12.0", require: false
 
 group :development, :test do
-  gem "sqlite3",         "~> 1.3"
   gem "debug",   "1.5.0", platforms: %i[ mri mingw x64_mingw ]
 end
 
